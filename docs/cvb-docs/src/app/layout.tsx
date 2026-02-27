@@ -1,4 +1,4 @@
-import { createMetadata } from '@/lib/metadata';
+import { baseUrl, createMetadata } from '@/lib/metadata';
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import type { Viewport } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
@@ -11,7 +11,7 @@ export const metadata = createMetadata({
   },
   description:
     'Universal, lightweight and performant styling solution with a focus on component architecture for the modern web',
-  // metadataBase: baseUrl,
+  metadataBase: baseUrl,
 });
 
 const geist = Geist({

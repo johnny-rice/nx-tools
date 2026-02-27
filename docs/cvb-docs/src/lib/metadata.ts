@@ -8,9 +8,23 @@ export function createMetadata(override: Metadata): Metadata {
       title: override.title ?? undefined,
       description: override.description ?? undefined,
       url: 'https://class-variance-builder.vercel.app',
-      //   images: '/banner.png',
       siteName: 'Class Variance Builder',
-      //   type: 'website',
+      type: 'website',
+      images: [
+        { url: '/banner.png', width: 1200, height: 630 },
+        {
+          url: '/banner-alt.png',
+          width: 1200,
+          height: 630,
+          alt: 'Alternative banner',
+        },
+        {
+          url: '/banner-logo.png',
+          width: 1200,
+          height: 630,
+          alt: 'Banner menu',
+        },
+      ],
       ...override.openGraph,
     },
     twitter: {

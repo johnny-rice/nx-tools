@@ -11,6 +11,15 @@ const withMDX = createMDX({
  **/
 const nextConfig = {
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/docs',
+        permanent: false,
+      },
+    ];
+  },
   async rewrites() {
     return [
       {
@@ -19,6 +28,7 @@ const nextConfig = {
       },
     ];
   },
+  serverExternalPackages: ['@takumi-rs/image-response'],
   // Use this to set Nx-specific options
   // See: https://nx.dev/recipes/next/next-config-setup
   nx: {},
