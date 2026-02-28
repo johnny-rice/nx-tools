@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "fumadocs-mdx:collections/*": ["./src/.source/*"]
     },
     "outDir": "dist",
     "rootDir": "src",
