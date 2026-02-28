@@ -38,8 +38,5 @@
   "peerDependencies": {
     "@nx/devkit": ">=18.0.0 <23.0.0",
     "tslib": "^2.6.0"
-  },
-  "devDependencies": {
-    "@nx/devkit": "22.5.1"
   }
 }

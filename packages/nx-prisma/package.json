@@ -27,9 +27,6 @@
     "ts-node": "^10.0.0",
     "tsx": "^4.0.0"
   },
-  "devDependencies": {
-    "@nx/devkit": "22.5.1"
-  },
   "peerDependenciesMeta": {
     "tsx": {
       "optional": true
